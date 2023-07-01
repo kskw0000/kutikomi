@@ -1,4 +1,4 @@
-<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalExample"
+<div class="modal fade" id="deleteModal{{$userData->id}}" tabindex="-1" role="dialog" aria-labelledby="deleteModalExample"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -12,12 +12,12 @@
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">キャンセル</button>
                 <a class="btn btn-danger" href="{{ route('logout') }}"
-                    onclick="event.preventDefault(); document.getElementById('user-delete-form').submit();">
+                    onclick="event.preventDefault(); document.getElementById('user-delete-form{{$userData->id}}').submit();">
                     削除
                 </a>
-                <form id="user-delete-form" method="POST" action="{{ route('admin.users.destroy', ['user' => $user->id]) }}">
+                <form id="user-delete-form{{$userData->id}}" method="GET" action="{{ route('admin.users.destroy', ['user' => $userData->id]) }}">
                     @csrf
-                    @method('DELETE')
+                    {{-- @method('DELETE') --}}
                 </form>
             </div>
         </div>

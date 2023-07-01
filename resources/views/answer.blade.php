@@ -883,7 +883,7 @@
                         <h3 class="step_comment_box_title">
                           口コミ内容<span><small>現在</small><span id="lettercount">0</span><small>文字</small></span>
                         </h3>
-                        <p class="step_comment_text">100文字以上1,000文字以内で、「園庭・園舎」に関するレビューを書いてください。</p>
+
                         <textarea
                           name="evaluations[1][comment]"
                           class="form_textarea"
@@ -908,18 +908,6 @@
 
               <div class="step_btnarea" style="z-index: 1;">
       
-                <div class="common_sp_640">
-                  <ul class="step_result_list">
-                    <li class="step_result_item">
-                      <p class="step_result_title">良い点</p>
-                      <p class="step_result_text">あと<span>2</span>項目</p>
-                    </li>
-                    <li class="step_result_item">
-                      <p class="step_result_title">改善点</p>
-                      <p class="step_result_text">あと<span>2</span>項目</p>
-                    </li>
-                  </ul>
-                </div>
                 <div class="step_btnarea_main" v-if="reportForm.userId">
                   <button type="button" class="step_save_btn" >口コミを一時保存</button>
                   <button type="button" class="step_next_btn" id="finishedit" disabled onclick=goToSave()>次へ</button>
@@ -1583,7 +1571,7 @@ function showStep(nextStep) {
   step = nextStep;
 
   if(nextStep == 9){
-    steps[nextStep - 1].style.display = 'flex';
+    steps[nextStep - 1].style.display = '';
     document.querySelectorAll('.amount-progress')[0].style.display = 'none';
   }
 
@@ -1614,7 +1602,7 @@ function checkValid() {
   const labels = document.querySelectorAll(".step_aside_label span");
   const cur = document.querySelector(".step_aside_item:nth-child(" + (tag + 1) + ") .step_aside_label");
   
-  if(review[tag].length > 100 && goodOrBad[tag] > -1) {
+  if(review[tag].length > 0 && goodOrBad[tag] > -1) {
     cur.classList.add('active');
   } else {
     cur.classList.remove('active');
@@ -1622,8 +1610,8 @@ function checkValid() {
 
   var gd = 0, bd = 0;
   for(var i = 0; i < 8; i++) {
-    if (review[i].length >= 100 && goodOrBad[i] > 2) gd++;
-    else if (review[i].length >= 100 && goodOrBad[i] < 3 && goodOrBad[i] >= 0) bd++;
+    if (review[i].length >= 1 && goodOrBad[i] > 2) gd++;
+    else if (review[i].length >= 1 && goodOrBad[i] < 3 && goodOrBad[i] >= 0) bd++;
   }
   document.querySelector("#goodcount").textContent = gd > 1 ? "0" : (2 - gd);
   document.querySelector("#badcount").innerHTML = bd ? "0" : "1";

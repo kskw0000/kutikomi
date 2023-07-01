@@ -8,7 +8,7 @@
 @php
     $evaluation_name = array('園庭・園舎', '職員同士の人間関係', '主任・園長との人間関係', '保護者との人間関係', '給与・福利厚生', 'シフトの融通', '業務量', '保育方針');
     $contract_name = array('正社員', '契約・派遣社員', 'パート・アルバイト', 'その他');
-    $work_period = array('2001-2005', '2006-2010', '2011-2015', '2016-2020', '2021~', 'other');
+    $work_period = array('2001-2005', '2006-2010', '2011-2015', '2016-2020', '2021~', '回答しない');
 @endphp
 
 @section('content')
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <p class="school-d_post_info">
-                        <span>{{$item->user_name}}(女性・{{$contract_name[$item->employment-1]}})</span><span>勤務時期:{{$work_period[$item->workperiod-1]}}</span>
+                        <span>{{$item->user_name}}(女性・{{$contract_name[$item->employment%4]}})</span><span>勤務時期:{{$work_period[$item->workperiod%6]}}</span>
                     </p>
                     <div class="school-d_post_box">
                         <div class="common_pc_640">

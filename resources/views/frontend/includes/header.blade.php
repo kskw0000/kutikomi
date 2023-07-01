@@ -2,7 +2,7 @@
   <div class="header_wrap">
       <div class="header_inner">
           <a href="/" class="header_logo" style="">
-              <img src="{{asset('assets/user/images/header/logo.svg')}}" alt="保育ひろば">
+              <img src="{{asset('assets/user/images/header/logo.png')}}" alt="保育ひろば">
           </a>
           <form action="/nurseries" method="get">
               <div class="header_search_block">

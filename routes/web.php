@@ -125,7 +125,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
       Route::post('/store', [App\Http\Controllers\Admin\UserController::class, 'store'])->name('store');
       Route::get('/edit/{user}', [App\Http\Controllers\Admin\UserController::class, 'edit'])->name('edit');
       Route::put('/update/{user}', [App\Http\Controllers\Admin\UserController::class, 'update'])->name('update');
-      Route::delete('/delete/{user}', [App\Http\Controllers\Admin\UserController::class, 'delete'])->name('destroy');
+      Route::get('/delete/{user}', [App\Http\Controllers\Admin\UserController::class, 'delete'])->name('destroy');
       Route::get('/update/status/{user_id}/{status}', [App\Http\Controllers\Admin\UserController::class, 'updateStatus'])->name('status');
 
       
@@ -142,7 +142,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
       // Route::post('/store', [ReviewController::class, 'store'])->name('store');
       Route::get('/edit/{review}', [App\Http\Controllers\Admin\ReviewController::class, 'edit'])->name('edit');
       // Route::put('/update/{user}', [ReviewController::class, 'update'])->name('update');
-      Route::delete('/delete/{review}', [App\Http\Controllers\Admin\ReviewController::class, 'delete'])->name('destroy');
+      Route::get('/delete/{review}', [App\Http\Controllers\Admin\ReviewController::class, 'delete'])->name('destroy');
       Route::get('/update/status/{review_id}/{status}', [App\Http\Controllers\Admin\ReviewController::class, 'updateStatus'])->name('status');    
   });
 
@@ -152,7 +152,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
       Route::post('/store', [App\Http\Controllers\Admin\CompanyController::class, 'store'])->name('store');
       Route::get('/edit/{company}', [App\Http\Controllers\Admin\CompanyController::class, 'edit'])->name('edit');
       Route::put('/update/{company}', [App\Http\Controllers\Admin\CompanyController::class, 'update'])->name('update');
-      Route::delete('/delete/{company}', [App\Http\Controllers\Admin\CompanyController::class, 'delete'])->name('destroy');
+      Route::get('/delete/{company}', [App\Http\Controllers\Admin\CompanyController::class, 'delete'])->name('destroy');
   });
 
   Route::middleware('auth')->prefix('nursery')->name('nursery.')->group(function(){
@@ -161,7 +161,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('/store', [App\Http\Controllers\Admin\NurseryController::class, 'store'])->name('store');
     Route::get('/edit/{nursery}', [App\Http\Controllers\Admin\NurseryController::class, 'edit'])->name('edit');
     Route::put('/update/{nursery}', [App\Http\Controllers\Admin\NurseryController::class, 'update'])->name('update');
-    Route::delete('/delete/{nursery}', [App\Http\Controllers\Admin\NurseryController::class, 'delete'])->name('destroy');
+    Route::get('/delete/{nursery}', [App\Http\Controllers\Admin\NurseryController::class, 'delete'])->name('destroy');
 });  
 });
 

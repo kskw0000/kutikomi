@@ -50,10 +50,11 @@
                                             class="btn btn-primary m-2">
                                             <i class="fa fa-pen"></i>
                                         </a>
-                                        <a class="btn btn-danger m-2" href="#" data-toggle="modal" data-target="#deleteModal">
+                                        <a class="btn btn-danger m-2" href="#" data-toggle="modal" data-target="#deleteModal{{$nursery->id}}">
                                             <i class="fas fa-trash"></i>
                                         </a>
                                     </td>
+                                    @include('admin.nursery.delete-modal', ['nurseryData' => $nursery])
                                 </tr>
                             @endforeach
                         </tbody>
@@ -65,8 +66,6 @@
         </div>
 
     </div>
-
-    @include('admin.nursery.delete-modal')
 
 @endsection
 

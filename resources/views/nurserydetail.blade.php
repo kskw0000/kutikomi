@@ -385,7 +385,7 @@
                                 @if ($item->id == $i)
                                     <li class="school-d_btn_item">
                                         <a href="/nurseries/{{$nurseryData['id']}}?contract_types%5B%5D={{$i}}" class="school-d_btn_link">
-                                            <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="{{$contract_name[$i-1]}}">{{$contract_name[$i-1]}} ({{$item->review_count}}件)
+                                            <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="{{$contract_name[$i%4]}}">{{$contract_name[$i%4]}} ({{$item->review_count}}件)
                                         </a>
                                     </li>   
                                     @php
@@ -396,7 +396,7 @@
                             @if ($flag == 0)
                             <li class="school-d_btn_item">
                                 <a href="/nurseries/{{$nurseryData['id']}}?contract_types%5B%5D={{$i}}" class="school-d_btn_link">
-                                    <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="">{{$contract_name[$i-1]}}(0件)
+                                    <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="">{{$contract_name[$i%4]}}(0件)
                                 </a>
                             </li>   
                             @endif
@@ -443,7 +443,7 @@
                                                         <li class="school-d_post_aside_item">
                                                             <label class="school-d_post_check_label">
                                                                 <input type="checkbox" name="contract_types[]" value="{{$i}}">
-                                                                <p class="school-d_post_check_text">{{$contract_name[$i-1]}}({{$item->review_count}}件)</p>
+                                                                <p class="school-d_post_check_text">{{$contract_name[$i%4]}}({{$item->review_count}}件)</p>
                                                             </label>
                                                         </li>
                                                         @php
@@ -477,7 +477,7 @@
                                             <li class="school-d_post_aside_item">
                                                 <label class="school-d_post_check_label">
                                                     <input type="checkbox" name="genders[]" value="2">
-                                                    <p class="school-d_post_check_text">女性(8件)</p>
+                                                    <p class="school-d_post_check_text">女性({{$nurseryData['review_count']}}件)</p>
                                                 </label>
                                             </li>
                                         </ul>
@@ -517,7 +517,7 @@
                                                             <p class="school-d_post_check_text">
                                                                 <img src="{{ asset("assets/user/images/school/detail/cat_icon0{$i}.svg") }}" alt="園庭・園舎" class="normal">
                                                                 <img src="{{ asset("assets/user/images/school/detail/cat_icon0{$i}_active.svg") }}" alt="園庭・園舎" class="active">
-                                                                {{$evaluation_name[$i-1]}} ({{$item->review_count}}件)
+                                                                {{$evaluation_name[$i-1]}} (0件)
                                                             </p>
                                                         </label>
                                                     </li>
@@ -620,7 +620,7 @@
                                             </div>
                                         </div>
                                         <p class="school-d_post_info">
-                                            <span>{{$item->user_name}}(女性・{{$contract_name[$item->employment-1]}})</span><span>勤務時期:{{$work_period[$item->workperiod-1]}}</span>
+                                            <span>{{$item->user_name}}(女性・{{$contract_name[$item->employment%4]}})</span><span>勤務時期:{{$work_period[$item->workperiod%6]}}</span>
                                         </p>
                                         <div class="school-d_post_box">
                                             <div class="common_pc_640">
@@ -1313,7 +1313,7 @@
                                     name="genders[]"
                                     value="2"
                                 >
-                                <p class="school-d_post_check_text">女性(8件)</p>
+                                <p class="school-d_post_check_text">女性({{$nurseryData['review_count']}}件)</p>
                             </label>
                         </li>
                     </ul>
@@ -1708,16 +1708,17 @@ const totalScore = 4.7;
 let cateScores = [];
 
 let reviewTypeData = {!! json_encode($reviewTypeData) !!};
+console.log(reviewTypeData)
 if(reviewTypeData.length!=8){
     cateScores = [
-        2.5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
+        3,
+        3,
+        3.5,
+        4,
+        3,
+        3,
+        4,
+        4,
     ];
 }else{
     cateScores = [

@@ -33,8 +33,10 @@ class CompanyController extends Controller
                 ->join('tbl_nursery', 'tbl_nursery.cooperate_id', '=', 'tbl_cooperate.id')
                 ->join('tbl_city_region', 'tbl_cooperate.city_id', '=', 'tbl_city_region.id')
                 ->join('tbl_prefecture_region', 'tbl_city_region.prefecture_id', '=', 'tbl_prefecture_region.id')
-                ->leftJoin('tbl_review_relation', 'tbl_nursery.id', '=', 'tbl_review_relation.nursery_id')
-                ->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id');
+                ->leftJoin('tbl_review_relation', function($join) {
+                  $join->on('tbl_review_relation.nursery_id', '=', 'tbl_nursery.id')
+                       ->where('tbl_review_relation.status', '=', 1);
+                })->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id');
       if($keyword) {
         $query->where('tbl_cooperate.name', 'like', '%' . $keyword . '%');
       }      
@@ -70,6 +72,7 @@ class CompanyController extends Controller
       $facilityData = Facility::select('id', 'name')->get();
 
       $companyData = $this->arrayPaginator($arrayData, $request);
+
 
       $tokyoCityData = DB::table('tbl_city_region')->join('tbl_prefecture_region', 'tbl_city_region.prefecture_id', '=', 'tbl_prefecture_region.id')
                           ->where('tbl_prefecture_region.name', 'like', '%東京%')
@@ -108,8 +111,10 @@ class CompanyController extends Controller
                 ->join('tbl_nursery', 'tbl_nursery.cooperate_id', '=', 'tbl_cooperate.id')
                 ->join('tbl_city_region', 'tbl_cooperate.city_id', '=', 'tbl_city_region.id')
                 ->join('tbl_prefecture_region', 'tbl_city_region.prefecture_id', '=', 'tbl_prefecture_region.id')
-                ->leftJoin('tbl_review_relation', 'tbl_nursery.id', '=', 'tbl_review_relation.nursery_id')
-                ->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
+                ->leftJoin('tbl_review_relation', function($join) {
+                  $join->on('tbl_review_relation.nursery_id', '=', 'tbl_nursery.id')
+                       ->where('tbl_review_relation.status', '=', 1);
+                })->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
                 ->groupBy('tbl_cooperate.id', 'tbl_nursery.id')
                 ->get();
 
@@ -150,6 +155,7 @@ class CompanyController extends Controller
                 ->join('tbl_review_relation', 'tbl_nursery.id', '=', 'tbl_review_relation.nursery_id')
                 ->join('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
                 ->join('users', 'users.id', '=', 'tbl_review_relation.user_id')
+                ->where('tbl_review_relation.status', 1)
                 ->where('tbl_cooperate.id', $id);
       $data = $query->get();   
 
@@ -163,8 +169,10 @@ class CompanyController extends Controller
                 ->join('tbl_nursery', 'tbl_nursery.cooperate_id', '=', 'tbl_cooperate.id')
                 ->join('tbl_city_region', 'tbl_cooperate.city_id', '=', 'tbl_city_region.id')
                 ->join('tbl_prefecture_region', 'tbl_city_region.prefecture_id', '=', 'tbl_prefecture_region.id')
-                ->leftJoin('tbl_review_relation', 'tbl_nursery.id', '=', 'tbl_review_relation.nursery_id')
-                ->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
+                ->leftJoin('tbl_review_relation', function($join) {
+                  $join->on('tbl_review_relation.nursery_id', '=', 'tbl_nursery.id')
+                       ->where('tbl_review_relation.status', '=', 1);
+                })->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
                 ->where('tbl_cooperate.id', $id)
                 ->groupBy('tbl_cooperate.id', 'tbl_nursery.id')
                 ->get();
@@ -222,6 +230,7 @@ class CompanyController extends Controller
       });
       $statistics = DB::table('tbl_review_relation')->join('tbl_review', 'tbl_review.review_id', '=', 'tbl_review_relation.id')
                                    ->groupBy('nursery_id')
+                                   ->where('tbl_review_relation.status', 1)
                                    ->select('tbl_review_relation.nursery_id', 'tbl_review.content', DB::raw('avg(tbl_review.rating) as review_rating'), DB::raw('count(*) as review_count'))
                                    ->get();
       $merged = $grouped->map(function ($item) use ($statistics) {

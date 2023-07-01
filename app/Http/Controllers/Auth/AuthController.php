@@ -155,12 +155,15 @@ class AuthController extends Controller
     public function postConfirm(Request $request) {
         $data1 = session()->get('data1');
 
-        return view('auth.confirm', $data1);
+        if($data1)  return view('auth.confirm', $data1);
+        else return view('auth.login');
     }
     
     public function postComplete(Request $request) {
         $data2 = session()->get('data2');
-        return view('auth.complete', compact('data2'));
+
+        if($data2) return view('auth.complete', compact('data2'));
+        else return view('auth.login');
     }
     /**
      * Write code on Method
@@ -251,11 +254,19 @@ class AuthController extends Controller
             error_log($user);
             if(!$user->is_email_verified) {
                 $verifyUser->user->is_email_verified = 1;
+                $verifyUser->user->status = 1;
                 $verifyUser->user->save();
                 $message = "Your e-mail is verified. You can now login.";
             } else {
                 $message = "Your e-mail is already verified. You can now login.";
             }
+        }
+
+        if(Auth::check()){
+
+            $user = Auth::user();
+            if($user->role_id == 1) 
+                return redirect('/admin/home')->with('message', $message);
         }
   
       return redirect()->route('login')->with('message', $message);

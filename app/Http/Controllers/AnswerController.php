@@ -42,7 +42,7 @@ class AnswerController extends Controller
             $save_relation = [
                 "nursery_id" => $data['nursery_id'],
                 "user_id" => $data['user'],
-                "status" => 0,
+                "status" => 1,
             ];
     
             $res_relation = ReviewRelation::create($save_relation);

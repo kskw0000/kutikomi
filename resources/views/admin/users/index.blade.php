@@ -69,10 +69,11 @@
                                             class="btn btn-primary m-2">
                                             <i class="fa fa-pen"></i>
                                         </a>
-                                        <a class="btn btn-danger m-2" href="#" data-toggle="modal" data-target="#deleteModal">
+                                        <a class="btn btn-danger m-2" href="#" data-user-id="{{ $user->id }}" data-toggle="modal" data-target="#deleteModal{{$user->id}}">
                                             <i class="fas fa-trash"></i>
                                         </a>
                                     </td>
+                                    @include('admin.users.delete-modal', ['userData' => $user])
                                 </tr>
                             @endforeach
                         </tbody>
@@ -85,7 +86,6 @@
 
     </div>
 
-    @include('admin.users.delete-modal')
 
 @endsection
 

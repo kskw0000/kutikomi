@@ -68,10 +68,11 @@
                                             class="btn btn-primary m-2">
                                             <i class="fa fa-eye"></i>
                                         </a>
-                                        <a class="btn btn-danger m-2" href="#" data-toggle="modal" data-target="#deleteModal">
+                                        <a class="btn btn-danger m-2" href="#" data-toggle="modal" data-target="#deleteModal{{$review->id}}">
                                             <i class="fas fa-trash"></i>
                                         </a>
                                     </td>
+                                    @include('admin.review.delete-modal', ['reviewData' => $review])
                                 </tr>
                             @endforeach
                         </tbody>
@@ -83,9 +84,6 @@
         </div>
 
     </div>
-
-    @include('admin.review.delete-modal')
-
 @endsection
 
 @section('scripts')

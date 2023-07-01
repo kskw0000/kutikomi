@@ -62,8 +62,10 @@ class DetailViewController extends Controller
                 ->join('tbl_prefecture_region', 'tbl_city_region.prefecture_id', '=', 'tbl_prefecture_region.id')
                 ->join('tbl_nursery_facility', 'tbl_nursery.id', '=', 'tbl_nursery_facility.nursery_id')
                 ->join('tbl_facility', 'tbl_facility.id', '=', 'tbl_nursery_facility.facility_id')
-                ->leftJoin('tbl_review_relation', 'tbl_nursery.id', '=', 'tbl_review_relation.nursery_id')
-                ->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
+                ->leftJoin('tbl_review_relation', function($join) {
+                  $join->on('tbl_review_relation.nursery_id', '=', 'tbl_nursery.id')
+                       ->where('tbl_review_relation.status', '=', 1);
+                })->leftJoin('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
                 ->where('tbl_nursery.id', $id);
       if(Auth::check()){
         $user = Auth::user();
@@ -83,6 +85,7 @@ class DetailViewController extends Controller
                             ->select('tbl_review.review_type as id', DB::raw('COUNT(tbl_review.id) AS review_count'), DB::raw('AVG(tbl_review.rating) as review_rating'))
                             ->groupBy('tbl_review.review_type')
                             ->orderBy('tbl_review.review_type')
+                            ->where('tbl_review_relation.status', 1)
                             ->where('tbl_review_relation.nursery_id', $id)
                             ->get();
 
@@ -91,6 +94,7 @@ class DetailViewController extends Controller
                             ->select('tbl_review.employment as id', DB::raw('COUNT(tbl_review.id) AS review_count'))
                             ->groupBy('tbl_review.employment')
                             ->orderBy('tbl_review.employment')
+                            ->where('tbl_review_relation.status', 1)
                             ->where('tbl_review_relation.nursery_id', $id)
                             ->get();
 
@@ -102,7 +106,8 @@ class DetailViewController extends Controller
       $query =  DB::table('tbl_review_relation')
                         ->join('tbl_review', 'tbl_review_relation.id', '=', 'tbl_review.review_id')
                         ->join('users', 'tbl_review_relation.user_id', '=', 'users.id')
-                        ->join('tbl_nursery', 'tbl_nursery.id', '=', 'tbl_review_relation.nursery_id');
+                        ->join('tbl_nursery', 'tbl_nursery.id', '=', 'tbl_review_relation.nursery_id')
+                        ->where('tbl_review_relation.status', 1);
                         
       if($contract_types)
         $query->whereIn('tbl_review.employment', $contract_types);
@@ -152,6 +157,7 @@ class DetailViewController extends Controller
         return $nursery;
       });
       $statistics = DB::table('tbl_review_relation')->join('tbl_review', 'tbl_review.review_id', '=', 'tbl_review_relation.id')
+                                  ->where('tbl_review_relation.status', 1)
                                    ->groupBy('nursery_id')
                                    ->select('tbl_review_relation.nursery_id', 'tbl_review.content', DB::raw('avg(tbl_review.rating) as review_rating'), DB::raw('count(*) as review_count'))
                                    ->get();
@@ -234,6 +240,7 @@ class DetailViewController extends Controller
       });
       $statistics = DB::table('tbl_review_relation')->join('tbl_review', 'tbl_review.review_id', '=', 'tbl_review_relation.id')
                                    ->groupBy('nursery_id')
+                                   ->where('tbl_review_relation.status', 1)
                                    ->select('tbl_review_relation.nursery_id', 'tbl_review.review_type', 'tbl_review.rating', 'tbl_review.content', DB::raw('avg(tbl_review.rating) as review_rating'), DB::raw('count(*) as review_count'))
                                    ->get();
       $merged = $grouped->map(function ($item) use ($statistics) {
