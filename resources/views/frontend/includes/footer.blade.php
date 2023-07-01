@@ -90,7 +90,11 @@
                   </div>
               </div>
           </div>
+<<<<<<< HEAD
           <small class="footer_copyright"></small>
+=======
+          <small class="footer_copyright">© NEO CAREER CO., LTD.</small>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
       </div>
   </div>
 </footer>

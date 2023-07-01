@@ -37,10 +37,15 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('confirm', [AuthController::class, 'postConfirm'])->name('post.confirm');
 Route::get('complete', [AuthController::class, 'postComplete'])->name('post.complete');
 
+<<<<<<< HEAD
 Route::get('password_forget', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::get('send_password_email_complete', [ForgotPasswordController::class, 'showSendEmail'])->name('show.send.email');
 
 Route::post('send_password_email', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
+=======
+Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
+Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
 Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
 Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
 
@@ -75,6 +80,12 @@ Route::get('/help/contact1', [HomeController::class, 'getHelpContact1'])->name('
 Route::get('/help/contact2', [HomeController::class, 'getHelpContact2'])->name('help.contact2');
 Route::post('/help/confirm', [HomeController::class, 'postHelpContact'])->name('post.help');
 
+<<<<<<< HEAD
+=======
+// Route::get('answer', [AnswerController::class, 'answer'])->middleware(['auth', 'is_verify_email'])->name('answer');
+// Route::get('answer/{ID}', [AnswerController::class, 'answer'])->middleware(['auth', 'is_verify_email'])->name('answer.id');
+
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
 Route::get('/mypage', [MypageController::class, 'index'])->middleware(['auth', 'is_verify_email'])->name('mypage');
 Route::get('/mypage/following', [MypageController::class, 'getFollowing'])->middleware(['auth', 'is_verify_email'])->name('mypage.following');
 Route::get('/mypage/like', [MypageController::class, 'getLike'])->middleware(['auth', 'is_verify_email'])->name('mypage.like');
@@ -100,6 +111,7 @@ Route::get('answer', [AnswerController::class, 'answer'])->middleware(['auth', '
 Route::get('answer/{id}', [AnswerController::class, 'showschoolById'])->middleware(['auth', 'is_verify_email'])->name('get.answer');
 // Route::post('store', [AnswerController::class, 'store'])->name('store');
 
+<<<<<<< HEAD
 Route::post('/store', 'AnswerController@store');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
@@ -166,3 +178,6 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
 });
 
 Route::post('cities', [App\Http\Controllers\Admin\CompanyController::class, 'getCities'])->name('get.cities');
+=======
+Route::post('/store', 'AnswerController@store');
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc

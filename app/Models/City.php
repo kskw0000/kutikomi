@@ -16,9 +16,12 @@ class City extends Model
         'flag',
         'prefecture_id'        
     ];
+<<<<<<< HEAD
 
     public function prefecture()
     {
         return $this->belongsTo(Prefecture::class);
     }
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
 }

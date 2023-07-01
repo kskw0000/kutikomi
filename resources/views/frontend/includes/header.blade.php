@@ -2,7 +2,11 @@
   <div class="header_wrap">
       <div class="header_inner">
           <a href="/" class="header_logo" style="">
+<<<<<<< HEAD
               <img src="{{asset('assets/user/images/header/logo.png')}}" alt="保育ひろば">
+=======
+              <img src="{{asset('assets/user/images/header/logo.svg')}}" alt="保育ひろば">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
           </a>
           <form action="/nurseries" method="get">
               <div class="header_search_block">

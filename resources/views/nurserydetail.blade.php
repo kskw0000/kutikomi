@@ -385,7 +385,11 @@
                                 @if ($item->id == $i)
                                     <li class="school-d_btn_item">
                                         <a href="/nurseries/{{$nurseryData['id']}}?contract_types%5B%5D={{$i}}" class="school-d_btn_link">
+<<<<<<< HEAD
                                             <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="{{$contract_name[$i%4]}}">{{$contract_name[$i%4]}} ({{$item->review_count}}件)
+=======
+                                            <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="{{$contract_name[$i-1]}}">{{$contract_name[$i-1]}} ({{$item->review_count}}件)
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                         </a>
                                     </li>   
                                     @php
@@ -396,7 +400,11 @@
                             @if ($flag == 0)
                             <li class="school-d_btn_item">
                                 <a href="/nurseries/{{$nurseryData['id']}}?contract_types%5B%5D={{$i}}" class="school-d_btn_link">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="">{{$contract_name[$i%4]}}(0件)
+=======
+                                    <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="">{{$contract_name[$i-1]}}(0件)
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                 </a>
                             </li>   
                             @endif
@@ -443,7 +451,11 @@
                                                         <li class="school-d_post_aside_item">
                                                             <label class="school-d_post_check_label">
                                                                 <input type="checkbox" name="contract_types[]" value="{{$i}}">
+<<<<<<< HEAD
                                                                 <p class="school-d_post_check_text">{{$contract_name[$i%4]}}({{$item->review_count}}件)</p>
+=======
+                                                                <p class="school-d_post_check_text">{{$contract_name[$i-1]}}({{$item->review_count}}件)</p>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                                             </label>
                                                         </li>
                                                         @php
@@ -477,7 +489,11 @@
                                             <li class="school-d_post_aside_item">
                                                 <label class="school-d_post_check_label">
                                                     <input type="checkbox" name="genders[]" value="2">
+<<<<<<< HEAD
                                                     <p class="school-d_post_check_text">女性({{$nurseryData['review_count']}}件)</p>
+=======
+                                                    <p class="school-d_post_check_text">女性(8件)</p>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                                 </label>
                                             </li>
                                         </ul>
@@ -517,7 +533,11 @@
                                                             <p class="school-d_post_check_text">
                                                                 <img src="{{ asset("assets/user/images/school/detail/cat_icon0{$i}.svg") }}" alt="園庭・園舎" class="normal">
                                                                 <img src="{{ asset("assets/user/images/school/detail/cat_icon0{$i}_active.svg") }}" alt="園庭・園舎" class="active">
+<<<<<<< HEAD
                                                                 {{$evaluation_name[$i-1]}} (0件)
+=======
+                                                                {{$evaluation_name[$i-1]}} ({{$item->review_count}}件)
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                                             </p>
                                                         </label>
                                                     </li>
@@ -535,24 +555,40 @@
                             <div class="school-d_post_main">
                                 <div class="school-d_post_result_block">
                                     <h2 class="school-d_post_result_title">
+<<<<<<< HEAD
                                         <img src="{{ asset("assets/user/images/school/detail/character03.svg") }}" alt="口コミ・評判">
+=======
+                                        <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/character03.svg" alt="口コミ・評判">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                         <span>
                                             <small>アンジェリカ東品川保育園の</small>
                                             口コミ・評判(8件)
                                         </span>
                                     </h2>
                                     <div class="common_sp">
+<<<<<<< HEAD
                                         <form method="get" class="search_form" action="nurseries/{{$nurseryData['id']}}">
+=======
+                                        <form method="get" class="search_form" action="https://hoikuhiroba-kuchikomi.com/nurseries/9453/kuchikomi">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                             <h3 class="school-d_post_search_title">条件を絞り込む</h3>
                                             <div class="school-d_post_keyword_block">
                                                 <div class="school-d_aside_keyword">
                                                     <input type="text" name="keyword" class="school-d_aside_input" placeholder="キーワードを入力" value="">
                                                     <button type="submit" class="school-d_aside_search_btn">
+<<<<<<< HEAD
                                                         <img src="{{ asset("assets/user/images/school/detail/search_icon.svg") }}" alt="search">
                                                     </button>
                                                 </div>
                                                 <button type="button" class="school-d_post_search_btn PopBtn" data-pop="Search">
                                                     <img src="{{ asset("assets/user/images/school/search_btn.svg") }}" alt="search">
+=======
+                                                        <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/search_icon.svg" alt="search">
+                                                    </button>
+                                                </div>
+                                                <button type="button" class="school-d_post_search_btn PopBtn" data-pop="Search">
+                                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/search_btn.svg" alt="search">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                                 </button>
                                             </div>
                                         </form>
@@ -620,7 +656,11 @@
                                             </div>
                                         </div>
                                         <p class="school-d_post_info">
+<<<<<<< HEAD
                                             <span>{{$item->user_name}}(女性・{{$contract_name[$item->employment%4]}})</span><span>勤務時期:{{$work_period[$item->workperiod%6]}}</span>
+=======
+                                            <span>{{$item->user_name}}(女性・{{$contract_name[$item->employment-1]}})</span><span>勤務時期:{{$work_period[$item->workperiod-1]}}</span>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                         </p>
                                         <div class="school-d_post_box">
                                             <div class="common_pc_640">
@@ -681,7 +721,11 @@
                             </div>
                             <aside class="school-d_recruit_aside">
                                 <h2 class="school-d_recruit_aside_title">
+<<<<<<< HEAD
                                     <img src="{{ asset("assets/user/images/school/detail/character06.svg") }}" alt="詳細情報">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/character06.svg" alt="詳細情報">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>
                                         <small>アンジェリカ東品川保育園の</small>
                                         詳細情報
@@ -740,7 +784,11 @@
             お近くの保育園
         </h1>
         <div class="school-d_others_main">
+<<<<<<< HEAD
             <img src="{{ asset("assets/user/images/school/detail/character04.svg") }}" alt="お近くの保育園" class="school-d_others_icon">
+=======
+            <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/character04.svg" alt="お近くの保育園" class="school-d_others_icon">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
             <ul class="school-d_others_list">
                 @foreach ($nearNurseryData as $item)
                     <li class="school-d_others_item">
@@ -1237,7 +1285,11 @@
 
   <!-- search popup -->
     <div class="common_sp">
+<<<<<<< HEAD
         <form method="get" action="/nurseries/{{$nurseryData['id']}}">
+=======
+        <form method="get" action="https://hoikuhiroba-kuchikomi.com/nurseries/9453/kuchikomi">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
         <!-- 条件を絞り込む -->
         <div class="school-sp_popup_block SchoolPop" id="SearchWindow" style="display:none;">
             <div class="school-sp_popup_head mb0">
@@ -1313,7 +1365,11 @@
                                     name="genders[]"
                                     value="2"
                                 >
+<<<<<<< HEAD
                                 <p class="school-d_post_check_text">女性({{$nurseryData['review_count']}}件)</p>
+=======
+                                <p class="school-d_post_check_text">女性(8件)</p>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                             </label>
                         </li>
                     </ul>
@@ -1332,8 +1388,13 @@
                                     value="1"
                                 >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon07.svg')}}" alt="園庭・園舎" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon07_active.svg')}}" alt="園庭・園舎" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon07.svg" alt="園庭・園舎" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon07_active.svg" alt="園庭・園舎" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     園庭・園舎 (1件)
                                 </p>
                             </label>
@@ -1346,8 +1407,13 @@
                                     value="2"
                                 >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon01.svg')}}" alt="職員同士の人間関係" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon01_active.svg')}}" alt="職員同士の人間関係" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon01.svg" alt="職員同士の人間関係" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon01_active.svg" alt="職員同士の人間関係" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     職員同士の人間関係 (1件)
                                 </p>
                             </label>
@@ -1360,8 +1426,13 @@
                                     value="3"
                                 >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon02.svg')}}" alt="主任・園長との人間関係" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon02_active.svg')}}" alt="主任・園長との人間関係" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon02.svg" alt="主任・園長との人間関係" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon02_active.svg" alt="主任・園長との人間関係" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     主任・園長との人間関係 (1件)
                                 </p>
                             </label>
@@ -1374,8 +1445,13 @@
                                     value="4"
                                 >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon03.svg')}}" alt="保護者との人間関係" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon03_active.svg')}}" alt="保護者との人間関係" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon03.svg" alt="保護者との人間関係" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon03_active.svg" alt="保護者との人間関係" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     保護者との人間関係 (1件)
                                 </p>
                             </label>
@@ -1388,8 +1464,13 @@
                                     value="5"
                                 >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon04.svg')}}" alt="給与・福利厚生" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon04_active.svg')}}" alt="給与・福利厚生" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon04.svg" alt="給与・福利厚生" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon04_active.svg" alt="給与・福利厚生" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     給与・福利厚生 (1件)
                                 </p>
                             </label>
@@ -1402,8 +1483,13 @@
                                     value="6"
                                 >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon08.svg')}}" alt="シフトの融通" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon08_active.svg')}}" alt="シフトの融通" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon08.svg" alt="シフトの融通" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon08_active.svg" alt="シフトの融通" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     シフトの融通 (1件)
                                 </p>
                             </label>
@@ -1416,8 +1502,13 @@
                                     value="7"
                                 >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon06.svg')}}" alt="業務量" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon06_active.svg')}}" alt="業務量" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon06.svg" alt="業務量" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon06_active.svg" alt="業務量" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     業務量 (1件)
                                 </p>
                             </label>
@@ -1430,8 +1521,13 @@
                                     value="8"
                                                                         >
                                 <p class="school-d_post_check_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon05.svg')}}" alt="保育方針" class="normal">
                                     <img src="{{asset('assets/user/images/school/detail/cat_icon05_active.svg')}}" alt="保育方針" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon05.svg" alt="保育方針" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/cat_icon05_active.svg" alt="保育方針" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     保育方針 (1件)
                                 </p>
                             </label>
@@ -1451,7 +1547,11 @@
   <div class="popup_filter" id="ReadFilter"></div>
     <div class="popup_wrap" id="ReadWindow">
       <button type="button" class="popup_close_btn PopCloseBtn">
+<<<<<<< HEAD
           <img src="{{asset('assets/user/images/popup/close_icon.svg')}}" alt="close">
+=======
+          <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/popup/close_icon.svg" alt="close">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
       </button>
       <div class="popup_inner">
           <p class="popup_title">
@@ -1461,7 +1561,11 @@
           <a href="post.html" class="popup_post_btn">
               口コミの投稿<span>（最大10日間ご利用可能）</span>
           </a>
+<<<<<<< HEAD
           <a href="/register" class="popup_service_btn">
+=======
+          <a href="https://hoikuhiroba-kuchikomi.com/register" class="popup_service_btn">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
               転職サービスに登録<span>（3日間ご利用可能）</span>
           </a>
       </div>
@@ -1472,7 +1576,11 @@
 <div class="popup_report_wrap" id="ReportWindow">
   <div class="common_pc pc">
       <button type="button" class="popup_close_btn PopClaimCloseBtn">
+<<<<<<< HEAD
           <img src="{{asset('assets/user/images/popup/close_icon.svg')}}" alt="close">
+=======
+          <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/popup/close_icon.svg" alt="close">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
       </button>
       <h3 class="popup_report_title">不適切として報告する</h3>
       <ul class="popup_report_list">
@@ -1708,6 +1816,7 @@ const totalScore = 4.7;
 let cateScores = [];
 
 let reviewTypeData = {!! json_encode($reviewTypeData) !!};
+<<<<<<< HEAD
 console.log(reviewTypeData)
 if(reviewTypeData.length!=8){
     cateScores = [
@@ -1719,6 +1828,18 @@ if(reviewTypeData.length!=8){
         3,
         4,
         4,
+=======
+if(reviewTypeData.length!=8){
+    cateScores = [
+        2.5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     ];
 }else{
     cateScores = [

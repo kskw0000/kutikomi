@@ -13,6 +13,17 @@
 
     <link rel="shortcut icon" href="{{asset('img/favicon.png')}}">
     <link rel="icon" type="image/ico" href="{{asset('img/favicon.png')}}" />
+<<<<<<< HEAD
+=======
+
+    {{-- <link rel="icon" href="https://hoikuhiroba-kuchikomi.com/assets/user/images/favicon/favicon-16.ico" sizes="16x16" />
+    <link rel="icon" href="https://hoikuhiroba-kuchikomi.com/assets/user/images/favicon/favicon-32.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://hoikuhiroba-kuchikomi.com/assets/user/images/favicon/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://hoikuhiroba-kuchikomi.com/assets/user/images/favicon/favicon-96.ico" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://hoikuhiroba-kuchikomi.com/assets/user/images/favicon/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="https://hoikuhiroba-kuchikomi.com/assets/user/images/favicon/favicon-196.png" sizes="196x196" /> --}}
+
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     <link rel="stylesheet" href="{{asset('assets/user/css/reset.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/user/css/style.css')}}" />    
     {{-- <x-google-analytics /> --}}

@@ -473,7 +473,11 @@
   <div class="common_inner">
     <h2 class="common_title01">最近見た保育園</h1>
     <div class="top_recent_main">
+<<<<<<< HEAD
       <img src="{{asset('assets/user/images/character/icon04.svg')}}" alt="最近見た保育園" class="top_recent_icon">
+=======
+      <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/character/icon04.svg" alt="最近見た保育園" class="top_recent_icon">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
       <ul class="top_recent_list">
         @foreach ($historyData as $item)
           <li class="top_recent_item">
@@ -1034,9 +1038,15 @@
       </div>
   </div>
 </div>
+<<<<<<< HEAD
 <link href="{{asset('assets/user/js/slick/slick-theme.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('assets/user/js/slick/slick.css')}}" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="{{asset('assets/user/js/slick/slick.min.js')}}"></script>
+=======
+<link href="https://hoikuhiroba-kuchikomi.com/assets/user/js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="https://hoikuhiroba-kuchikomi.com/assets/user/js/slick/slick.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://hoikuhiroba-kuchikomi.com/assets/user/js/slick/slick.min.js"></script>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
 <script>
   jQuery(function($){
     $('#SchoolSlider').slick({

@@ -4,12 +4,19 @@
 <head>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+<<<<<<< HEAD
 
 <script>
   var step = <?php echo isset($preinput) ? 3 : 1; ?>, tag = 0;
   me_id = -1;  
   var flag_step = <?php echo isset($preinput) ? 1 : 0; ?>;
   // var user_id = 3;
+=======
+<script>
+
+  var step = <?php echo isset($preinput) ? 3 : 1; ?>, tag = 0;
+  var user_id = 3;
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   var goodOrBad = [-1, -1, -1, -1, -1, -1, -1, -1];
   var review = ["", "", "", "", "", "", "", "", "", ""];
   var categories = [
@@ -111,16 +118,28 @@
         <div class="step post_bg_wrap post_start" style={{ $preinput ? 'display:none' : 'display:block' }} >
           <h1 class="post_title01">口コミを投稿する</h1>   
           <div class="post_bnr_block">
+<<<<<<< HEAD
             <img src="{{asset('assets/user/images/post/bnr01_both_new.png')}}" alt="記念キャンペーン" />
           </div>
           <div class="common_pc">
             <button type="button" onclick="showStep(2)" class="post_btn">
               口コミを投稿<img src="{{asset('assets/user/images/school/detail/btn_icon.svg')}}" alt="口コミを投稿" />
+=======
+            <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/bnr01_both_new.png" alt="記念キャンペーン" />
+          </div>
+          <div class="common_pc">
+            <button type="button" onclick="showStep(2)" class="post_btn">
+              口コミを投稿<img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/btn_icon.svg" alt="口コミを投稿" />
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
             </button>
           </div>
           <div class="common_sp">
             <button type="button" onclick="showStep(2)" class="post_btn">
+<<<<<<< HEAD
               口コミを投稿<img src="{{asset('assets/user/images/school/detail/btn_icon.svg')}}" alt="口コミを投稿" />
+=======
+              口コミを投稿<img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/btn_icon.svg" alt="口コミを投稿" />
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
             </button>
           </div>
           <div class="post_privacy_block">
@@ -144,7 +163,11 @@
                   <div class="post_review_head_title_block">
                     <h3 class="post_review_head_title">業務量</h3>
                     <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                       <img src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>良い点	
+=======
+                      <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>良い点	
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                     </p>
                   </div>
                 </div>
@@ -153,6 +176,7 @@
                   <div class="post_review_head_rate">
                     <ul class="school_star_list">
                       <li class="school_star_item">
+<<<<<<< HEAD
                         <img src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                       </li>
                       <li class="school_star_item">
@@ -166,6 +190,21 @@
                       </li>
                       <li class="school_star_item">
                         <img src="{{asset('assets/user/images/star/star00.svg')}}" alt="star0">
+=======
+                        <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                      </li>
+                      <li class="school_star_item">
+                        <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                      </li>
+                      <li class="school_star_item">
+                        <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                      </li>
+                      <li class="school_star_item">
+                        <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star08.svg" alt="star8">
+                      </li>
+                      <li class="school_star_item">
+                        <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star00.svg" alt="star0">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                       </li>
                     </ul>
                     <p class="post_review_head_rate_num">3.8</p>
@@ -184,8 +223,13 @@
               </div>
               <div class="post_review_btnarea">
                 <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                   <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                   <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                  <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                  <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                   <span>いいね！</span>
                   <small>27</small>
                 </button>
@@ -206,7 +250,11 @@
                 >
                 <button type="button" class="post_search_submit_btn">
                   <img
+<<<<<<< HEAD
                     src="{{asset('assets/user/images/post/serch_icon.svg')}}"
+=======
+                    src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/serch_icon.svg"
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                     alt="search"
                     onclick="searchNursery()" />
                 </button>
@@ -218,7 +266,11 @@
             <div class="post_search_sub">
               <ul class="post_search_list">
                 @foreach ($schools as $item)
+<<<<<<< HEAD
                   <li class="school_item" datanurseryid={{ $item->id }} onclick="schoolClicked()" style="display:none">{{ $item->name }}</li>
+=======
+                  <li class="school_item" onclick="schoolClicked()" style="display:none">{{ $item }}</li>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                 @endforeach
               </ul>
               <div class="align_center">
@@ -237,7 +289,11 @@
                     >
                     <button type="button" class="post_search_submit_btn">
                         <img
+<<<<<<< HEAD
                             src="{{asset('assets/user/images/post/serch_icon.svg')}}"
+=======
+                            src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/serch_icon.svg"
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                             alt="search"
                             @click="searchNursery">
                     </button>
@@ -358,7 +414,11 @@
               </ul>
               <div class="common_sp_640">
                 <button type="button" class="step_back_btn" @click="backTo()">
+<<<<<<< HEAD
                   <img src="{{asset('assets/user/images/common/arrow_back_brown.svg')}}" alt="back">戻る
+=======
+                  <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/common/arrow_back_brown.svg" alt="back">戻る
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                 </button>
               </div>
             </div>
@@ -369,7 +429,11 @@
             </div>
             <div class="common_pc_640">
               <button type="button" class="step_back_btn" @click="backTo()">
+<<<<<<< HEAD
                 <img src="{{asset('assets/user/images/common/arrow_back_brown.svg')}}" alt="back">戻る
+=======
+                <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/common/arrow_back_brown.svg" alt="back">戻る
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
               </button>
             </div>
           </div>
@@ -423,7 +487,11 @@
               </ul>
               <div class="common_sp_640">
                 <button type="button" class="step_back_btn" @click="backTo()">
+<<<<<<< HEAD
                   <img src="{{asset('assets/user/images/common/arrow_back_brown.svg')}}" alt="back">戻る
+=======
+                  <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/common/arrow_back_brown.svg" alt="back">戻る
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                 </button>
               </div>
             </div>
@@ -434,7 +502,11 @@
             </div>
             <div class="common_pc_640">
               <button type="button" class="step_back_btn" @click="backTo()">
+<<<<<<< HEAD
                 <img src="{{asset('assets/user/images/common/arrow_back_brown.svg')}}" alt="back">戻る
+=======
+                <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/common/arrow_back_brown.svg" alt="back">戻る
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
               </button>
             </div>
           </div>
@@ -500,7 +572,11 @@
               </ul>
               <div class="common_sp_640">
                 <button type="button" class="step_back_btn" @click="backTo()">
+<<<<<<< HEAD
                   <img src="{{asset('assets/user/images/common/arrow_back_brown.svg')}}" alt="back">戻る
+=======
+                  <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/common/arrow_back_brown.svg" alt="back">戻る
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                 </button>
               </div>
             </div>
@@ -511,7 +587,11 @@
             </div>
             <div class="common_pc_640">
               <button type="button" class="step_back_btn" @click="backTo()">
+<<<<<<< HEAD
                 <img src="{{asset('assets/user/images/common/arrow_back_brown.svg')}}" alt="back">戻る
+=======
+                <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/common/arrow_back_brown.svg" alt="back">戻る
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
               </button>
             </div>
           </div>
@@ -580,6 +660,10 @@
     </div>
     <div class="step step_layout_block" style="display:none">
       <div id="group_of_form_contents">
+<<<<<<< HEAD
+=======
+        <input type="hidden" name="user_id" value="1392">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
         <input type="hidden" name="nursery_id" id="nursery_id" :value="reportForm.nurseryId">
         <input type="hidden" name="contract_type" :value="reportForm.contractType">
         <input type="hidden" name="service_duration" :value="reportForm.serviceDuration">
@@ -732,8 +816,13 @@
                                     @change="setAnswer('cleanness', 'isGood', true)"
                                     >
                                   <p class="step_choose_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon04.svg')}}" alt="良い点" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon04_active.svg')}}" alt="良い点" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon04.svg" alt="良い点" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon04_active.svg" alt="良い点" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>良い点</span>
                                   </p>
                                 </label>
@@ -748,8 +837,13 @@
                                     @change="setAnswer('cleanness', 'isGood',false)"
                                     >
                                   <p class="step_choose_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon02.svg')}}" alt="改善点" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon02_active.svg')}}" alt="改善点" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon02.svg" alt="改善点" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon02_active.svg" alt="改善点" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>改善点</span>
                                   </p>
                                 </label>
@@ -774,8 +868,13 @@
                                     @change="setAnswer('cleanness', 'score')"
                                   >
                                   <p class="step_choose_text" :disabled="reportForm.evaluations.cleanness.isGood != 2">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon01.svg')}}" alt="とても不満" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon01_active.svg')}}" alt="とても不満" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon01.svg" alt="とても不満" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon01_active.svg" alt="とても不満" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>とても<br>不満</span>
                                   </p>
                                 </label>
@@ -793,8 +892,13 @@
                                     @change="setAnswer('cleanness', 'score')"
                                   >
                                   <p class="step_choose_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon02.svg')}}" alt="不満" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon02_active.svg')}}" alt="不満" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon02.svg" alt="不満" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon02_active.svg" alt="不満" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>不満</span>
                                   </p>
                                 </label>
@@ -812,8 +916,13 @@
                                     @change="setAnswer('cleanness', 'score')"
                                   >
                                   <p class="step_choose_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon03.svg')}}" alt="やや不満" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon03_active.svg')}}" alt="やや不満" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon03.svg" alt="やや不満" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon03_active.svg" alt="やや不満" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>やや不満</span>
                                   </p>
                                 </label>
@@ -831,8 +940,13 @@
                                     @change="setAnswer('cleanness', 'score')"
                                   >
                                   <p class="step_choose_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon04.svg')}}" alt="おおむね満足" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon04_active.svg')}}" alt="おおむね満足" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon04.svg" alt="おおむね満足" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon04_active.svg" alt="おおむね満足" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>おおむね<br>満足</span>
                                   </p>
                                 </label>
@@ -850,8 +964,13 @@
                                     @change="setAnswer('cleanness', 'score')"
                                   >
                                   <p class="step_choose_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon05.svg')}}" alt="満足" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon05_active.svg')}}" alt="満足" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon05.svg" alt="満足" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon05_active.svg" alt="満足" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>満足</span>
                                   </p>
                                 </label>
@@ -869,8 +988,13 @@
                                     @change="setAnswer('cleanness', 'score')"
                                   >
                                   <p class="step_choose_text">
+<<<<<<< HEAD
                                     <img src="{{asset('assets/user/images/post/face_icon06.svg')}}" alt="とても満足" class="normal">
                                     <img src="{{asset('assets/user/images/post/face_icon06_active.svg')}}" alt="とても満足" class="active">
+=======
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon06.svg" alt="とても満足" class="normal">
+                                    <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/post/face_icon06_active.svg" alt="とても満足" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                     <span>とても<br>満足</span>
                                   </p>
                                 </label>
@@ -883,7 +1007,11 @@
                         <h3 class="step_comment_box_title">
                           口コミ内容<span><small>現在</small><span id="lettercount">0</span><small>文字</small></span>
                         </h3>
+<<<<<<< HEAD
 
+=======
+                        <p class="step_comment_text">100文字以上1,000文字以内で、「園庭・園舎」に関するレビューを書いてください。</p>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                         <textarea
                           name="evaluations[1][comment]"
                           class="form_textarea"
@@ -894,7 +1022,11 @@
                         <div class="step_comment_text" style="color: red; display: none;">※同じ文字は連続して2回まで使用可能です </div>
                         <ul class="step_info_list">
                           <li class="step_info_item">
+<<<<<<< HEAD
                             <a href="/guide" target="_blank">※口コミ投稿ガイドライン</a>に沿ってご投稿ください。
+=======
+                            <a href="https://hoikuhiroba-kuchikomi.com/guide" target="_blank">※口コミ投稿ガイドライン</a>に沿ってご投稿ください。
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                           </li>
                           <li class="step_info_item">
                             ※当サイトは内部告発や被害報告をする場ではございません。他の保育士に参考となるようなポジティブなご投稿をお願いいたします。
@@ -908,6 +1040,21 @@
 
               <div class="step_btnarea" style="z-index: 1;">
       
+<<<<<<< HEAD
+=======
+                <div class="common_sp_640">
+                  <ul class="step_result_list">
+                    <li class="step_result_item">
+                      <p class="step_result_title">良い点</p>
+                      <p class="step_result_text">あと<span>2</span>項目</p>
+                    </li>
+                    <li class="step_result_item">
+                      <p class="step_result_title">改善点</p>
+                      <p class="step_result_text">あと<span>2</span>項目</p>
+                    </li>
+                  </ul>
+                </div>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                 <div class="step_btnarea_main" v-if="reportForm.userId">
                   <button type="button" class="step_save_btn" >口コミを一時保存</button>
                   <button type="button" class="step_next_btn" id="finishedit" disabled onclick=goToSave()>次へ</button>
@@ -978,7 +1125,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -988,6 +1139,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1001,6 +1153,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1017,8 +1184,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1037,7 +1209,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -1047,6 +1223,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1060,6 +1237,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1076,8 +1268,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1096,7 +1293,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -1106,6 +1307,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1119,6 +1321,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1135,8 +1352,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1155,7 +1377,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -1165,6 +1391,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1178,6 +1405,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1194,8 +1436,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1214,7 +1461,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -1224,6 +1475,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1237,6 +1489,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1253,8 +1520,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1273,7 +1545,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -1283,6 +1559,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1296,6 +1573,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1312,8 +1604,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1332,7 +1629,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -1342,6 +1643,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1355,6 +1657,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1371,8 +1688,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1391,7 +1713,11 @@
                               <div class="post_review_head_title_block">
                               <h3 class="post_review_head_title"></h3>
                               <p class="post_review_head_text good-color">
+<<<<<<< HEAD
                                   <img class="goodorbadimg" src="{{asset('assets/user/images/school/detail/face_icon01.svg')}}" alt="良い点"	>
+=======
+                                  <img class="goodorbadimg" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/face_icon01.svg" alt="良い点"	>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                   <span class="goodorbadtxt" >良い点</span>
                               </p>
                               </div>
@@ -1401,6 +1727,7 @@
                             <div class="post_review_head_rate">
                             <ul class="school_star_list">
                               <li class="school_star_item">
+<<<<<<< HEAD
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
                               </li>
                               <li class="school_star_item">
@@ -1414,6 +1741,21 @@
                               </li>
                               <li class="school_star_item">
                                 <img class="staricon" src="{{asset('assets/user/images/star/star10.svg')}}" alt="star10">
+=======
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+                              </li>
+                              <li class="school_star_item">
+                                <img class="staricon" src="https://hoikuhiroba-kuchikomi.com/assets/user/images/star/star10.svg" alt="star10">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               </li>
                             </ul>
                             <p class="post_review_head_rate_num"></p>
@@ -1430,8 +1772,13 @@
                           </div>
                           <div class="post_review_btnarea">
                           <button type="button" class="post_review_like_btn LikeBtn">
+<<<<<<< HEAD
                               <img src="{{asset('assets/user/images/school/detail/like_icon.svg')}}" alt="like" class="normal">
                               <img src="{{asset('assets/user/images/school/detail/like_icon_active.svg')}}" alt="like" class="active">
+=======
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon.svg" alt="like" class="normal">
+                              <img src="https://hoikuhiroba-kuchikomi.com/assets/user/images/school/detail/like_icon_active.svg" alt="like" class="active">
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                               <span>いいね！</span>
                               <small>27</small>
                           </button>
@@ -1444,8 +1791,12 @@
 
           </div>
           <div class="step_btnarea">
+<<<<<<< HEAD
             <button onclick="goToCreate(<?php echo $me_id; ?>)" class="step_next_btn confirm_btn">内容確認して送信</button>
             <input type="hidden" id="user_id" value="{{ session('user')['id'] }}">
+=======
+            <button onclick="goToCreate()" class="step_next_btn confirm_btn">内容確認して送信</button>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
           </div>
         </div>
       </div>
@@ -1483,6 +1834,7 @@ function goToSave() {
   showStep(step + 1);
 }
 
+<<<<<<< HEAD
 var user_id = document.getElementById('user_id').value;
 var nurseryid;
 function goToCreate(me_id) 
@@ -1491,12 +1843,18 @@ function goToCreate(me_id)
   if(flag_step == 1)
     nurseryid = me_id;
   {
+=======
+function goToCreate() {
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   axios.post("/api/answer/storeData", {
     "review":JSON.stringify(review),
     "mark": goodOrBad,
     "index": selectedIndex,
     "user": user_id,
+<<<<<<< HEAD
     "nursery_id": nurseryid
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   })
   .then(response => {
     console.log(response);
@@ -1505,7 +1863,10 @@ function goToCreate(me_id)
   .catch(err => {
     console.log(err);
   })
+<<<<<<< HEAD
   }
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
 }
 
 function openTapBtn(index) {
@@ -1571,7 +1932,11 @@ function showStep(nextStep) {
   step = nextStep;
 
   if(nextStep == 9){
+<<<<<<< HEAD
     steps[nextStep - 1].style.display = '';
+=======
+    steps[nextStep - 1].style.display = 'flex';
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     document.querySelectorAll('.amount-progress')[0].style.display = 'none';
   }
 
@@ -1602,7 +1967,11 @@ function checkValid() {
   const labels = document.querySelectorAll(".step_aside_label span");
   const cur = document.querySelector(".step_aside_item:nth-child(" + (tag + 1) + ") .step_aside_label");
   
+<<<<<<< HEAD
   if(review[tag].length > 0 && goodOrBad[tag] > -1) {
+=======
+  if(review[tag].length > 100 && goodOrBad[tag] > -1) {
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     cur.classList.add('active');
   } else {
     cur.classList.remove('active');
@@ -1610,8 +1979,13 @@ function checkValid() {
 
   var gd = 0, bd = 0;
   for(var i = 0; i < 8; i++) {
+<<<<<<< HEAD
     if (review[i].length >= 1 && goodOrBad[i] > 2) gd++;
     else if (review[i].length >= 1 && goodOrBad[i] < 3 && goodOrBad[i] >= 0) bd++;
+=======
+    if (review[i].length >= 100 && goodOrBad[i] > 2) gd++;
+    else if (review[i].length >= 100 && goodOrBad[i] < 3 && goodOrBad[i] >= 0) bd++;
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   }
   document.querySelector("#goodcount").textContent = gd > 1 ? "0" : (2 - gd);
   document.querySelector("#badcount").innerHTML = bd ? "0" : "1";
@@ -1621,21 +1995,31 @@ function checkValid() {
 function searchNursery() {
   var myVar = @json($schools);
   var srchtext = document.querySelector(".post_search_input").value;
+<<<<<<< HEAD
   console.log('post_search_input '+srchtext);
   const items = document.querySelectorAll('.school_item');
 
   for(var i = 0; i < myVar.length; i++) {
     items[i].style.display = (myVar[i].name.indexOf(srchtext) >= 0) ? 'block' : 'none';
+=======
+  const items = document.querySelectorAll('.school_item');
+
+  for(var i = 0; i < myVar.length; i++) {
+    items[i].style.display = (myVar[i].indexOf(srchtext) >= 0) ? 'block' : 'none';
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   }
 }
 
 function schoolClicked() {
   document.querySelector(".post_register_result_text").innerText = event.target.innerText;
   selectedText[0] = event.target.innerText;
+<<<<<<< HEAD
 
   nurseryid =event.target.getAttribute('datanurseryid');
   
   console.log(nurseryid);
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   showStep(3);
 }
 

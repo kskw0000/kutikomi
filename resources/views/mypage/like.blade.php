@@ -402,7 +402,11 @@
     </section> 
     <div class="common_pc"></div>
     <div class="common_sp">
+<<<<<<< HEAD
         <a href="/mypage" class="common_btn01 center w300">マイページトップへ</a>
+=======
+        <a href="https://hoikuhiroba-kuchikomi.com/mypage" class="common_btn01 center w300">マイページトップへ</a>
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     </div>
   </div>
 </main>
