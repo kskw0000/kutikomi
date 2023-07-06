@@ -124,7 +124,7 @@
                         <label class="form_priacty_label">
                             <input type="checkbox" name="terms" value="1" v-model="userInfos.data.terms">
                             <p class="form_privacy_text">
-                                <a href="https://www.neo-career.co.jp/policy/" target="_blank" rel="noopener noreferrer">個人情報の取り扱いについて</a> / <a href="/terms" target="_blank" rel="noopener noreferrer">利用規約</a><span>を確認し、同意します。</span>
+                                <a href="http://napps-log.com/" target="_blank" rel="noopener noreferrer">個人情報の取り扱いについて</a> / <a href="/terms" target="_blank" rel="noopener noreferrer">利用規約</a><span>を確認し、同意します。</span>
                             </p>
                         </label>
                     </div>
