@@ -30,8 +30,8 @@
                             <div class="form_birth_block">
                                 <select name="birthday_year" class="form_select FormSelect" id="birthdayYear">
                                     <option value="">年</option>
-                                    <option value="2003">2003</option>
-                                    <option value="1968">1968</option>
+                                    <option value="1990">1990</option>
+                                    <option value="2005">2005</option>
                                 </select>
                                 <p class="form_birth_text">年</p>
                                 <select name="birthday_month" class="form_select FormSelect" id="birthdayMonth">
