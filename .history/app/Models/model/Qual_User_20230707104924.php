@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models; // 修正した部分
+namespace App\Models\Model; // この行を変更します。
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
