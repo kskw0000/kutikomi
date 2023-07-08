@@ -93,7 +93,7 @@
           @foreach ($companyData as $item)
           <p class="company_mv_text">
               {{$item['name']}}保育園で働いていた保育士の口コミ評判・求人ランキングのスコアは、{{$item['review_rating']}}点となっています。<br>
-              保育士スコアは{{$item['name']}}保育園{{$item['nursery_count']}}施設を対象に「保育ひろば」が独自に算出したスコアです。<br>
+              保育士スコアは{{$item['name']}}保育園{{$item['nursery_count']}}施設を対象に「保育士Reach」が独自に算出したスコアです。<br>
               法人ごとの保育士口コミ評判を比較することで、保育園への転職・就職・求人応募の際にお役立ていただくことを目的にしています。
           </p>
           @endforeach
@@ -491,7 +491,7 @@
                   <div class="qa_quest_block QABtn">
                       <p class="qa_quest_icon">Q.</p>
                       <h3 class="qa_quest_title">
-                          保育ひろばに会員登録をしたら何ができるようになりますか？
+                          保育士Reachに会員登録をしたら何ができるようになりますか？
                       </h3>
                   </div>
                   <div class="qa_answer_block">

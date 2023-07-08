@@ -11,16 +11,16 @@
                       <a href="/" class="pankuzu_link">ホーム</a>
                   </li>
                   <li class="pankuzu_item">
-                      「保育ひろば」利用規約
+                      「保育士Reach」利用規約
                   </li>
               </ul>
           </div>
           <div class="others_bg_wrap">
               <h1 class="others_title01 terms">
-                  「保育ひろば」利用規約
+                  「保育士Reach」利用規約
               </h1>
               <p class="others_terms_text">
-                  本利用規約（以下、「本規約」といいます）には、株式会社プロリーチ(以下、「当社」といいます)が運営する「保育ひろば」の提供条件および当社と利用者の皆様との間の権利義務が定められています。利用者は、本サービスを利用した時点で、本規約および「『プロリーチ』における個人情報の取り扱いについて」（<a href="http://napps-log.com/" target="_blank" rel="noopener noreferrer">http://napps-log.com/</a> ）の内容をすべて承諾したものとみなされます。
+                  本利用規約（以下、「本規約」といいます）には、株式会社プロリーチ(以下、「当社」といいます)が運営する「保育士Reach」の提供条件および当社と利用者の皆様との間の権利義務が定められています。利用者は、本サービスを利用した時点で、本規約および「『プロリーチ』における個人情報の取り扱いについて」（<a href="http://napps-log.com/" target="_blank" rel="noopener noreferrer">http://napps-log.com/</a> ）の内容をすべて承諾したものとみなされます。
               </p>
               <div class="others_terms_block">
                   <div class="others_terms_box">
@@ -30,7 +30,7 @@
                       <ul class="others_terms_list">
                           <li class="others_terms_item">
                               <p class="others_terms_main">
-                                  <span>1.</span>「本サービス」とは、当社が提供する「保育ひろば」をいい、サービス名の名称または内容が変更された場合は、当該変更後のサービスを含みます。
+                                  <span>1.</span>「本サービス」とは、当社が提供する「保育士Reach」をいい、サービス名の名称または内容が変更された場合は、当該変更後のサービスを含みます。
                               </p>
                           </li>
                           <li class="others_terms_item">

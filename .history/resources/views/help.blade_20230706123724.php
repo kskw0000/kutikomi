@@ -29,7 +29,7 @@
           <div class="others_help_layout">
               <div class="others_help_block">
                   <div class="others_help_box">
-                      <h2 class="others_help_title">保育ひろばについて</h2>
+                      <h2 class="others_help_title">保育士Reachについて</h2>
                       <ul class="others_help_list">
                           <li class="others_help_item active ">
                               <div class="others_help_quest_block QABtn">
@@ -41,7 +41,7 @@
                               <div class="others_help_answer_block">
                                   <p class="others_help_answer_text">
                                       <span class="others_help_answer_icon">A.</span>
-                                      <span>保育ひろばの会員登録やサービスの利用は無料です。</span>
+                                      <span>保育士Reachの会員登録やサービスの利用は無料です。</span>
                                   </p>
                               </div>
                           </li>
@@ -71,13 +71,13 @@
                             <div class="others_help_quest_block QABtn">
                                 <p class="others_help_quest_icon">Q.</p>
                                 <h2 class="others_help_quest_title">
-                                    <span>「保育ひろば」とはどのようなサイトですか？</span>
+                                    <span>「保育士Reach」とはどのようなサイトですか？</span>
                                 </h2>
                             </div>
                             <div class="others_help_answer_block">
                                 <p class="others_help_answer_text">
                                     <span class="others_help_answer_icon">A.</span>
-                                    <span>「保育ひろば」とは就職・転職の保育園選びに役立つサイトです。
+                                    <span>「保育士Reach」とは就職・転職の保育園選びに役立つサイトです。
                                         日本全国の保育園について、実際に働く保育士や元保育士から"リアルな声"を収集し、わかりやすくまとめて掲載しています。</span>
                                 </p>
                             </div>
@@ -122,7 +122,7 @@
                                   <span>配信停止後にメールマガジンや各種お知らせメールが届く場合、以下の原因が考えられます。
 
                                     ①すべてのメールの配信停止が完了していない
-                                    保育ひろばからお送りしている以下メールのいずれかを配信停止されていない可能性がございます。
+                                    保育士Reachからお送りしている以下メールのいずれかを配信停止されていない可能性がございます。
                                     ・お知らせメール
                                     ・フォローしている園の新着口コミメール
                                     ・求人関連のコンテンツを配信するメール
@@ -142,18 +142,18 @@
                           <div class="others_help_quest_block QABtn">
                               <p class="others_help_quest_icon">Q.</p>
                               <h2 class="others_help_quest_title">
-                                  <span>「保育ひろばからのメールが届きません。</span>
+                                  <span>「保育士Reachからのメールが届きません。</span>
                               </h2>
                           </div>
                           <div class="others_help_answer_block">
                               <p class="others_help_answer_text">
                                   <span class="others_help_answer_icon">A.</span>
-                                  <span>保育ひろばからのメールが届かない場合、以下に心当たりがないかご確認ください。
+                                  <span>保育士Reachからのメールが届かない場合、以下に心当たりがないかご確認ください。
 
                                     ①迷惑メールフォルダなどに入っている
                                     迷惑メールフォルダやゴミ箱に振り分けられていないかご確認ください。
                                     
-                                    ②保育ひろばからのメールが届かない設定になっている
+                                    ②保育士Reachからのメールが届かない設定になっている
                                     「」ドメインの受信を許可していただき、お問い合わせフォームからご連絡ください。</span>
                               </p>
                           </div>
@@ -204,9 +204,9 @@
                             <div class="others_help_answer_block">
                                 <p class="others_help_answer_text">
                                     <span class="others_help_answer_icon">A.</span>
-                                    <span>保育ひろばの会員登録完了時には以下のメールをお送りしています。会員登録完了メールが届いているメールアドレスがないか、念のためご確認ください。
+                                    <span>保育士Reachの会員登録完了時には以下のメールをお送りしています。会員登録完了メールが届いているメールアドレスがないか、念のためご確認ください。
 
-                                        件名：【保育ひろば】会員登録完了のお知らせ
+                                        件名：【保育士Reach】会員登録完了のお知らせ
                                         
                                         なお、パスワードをお忘れの場合、パスワード再設定より再設定が可能です。</span>
                                 </p>
@@ -259,7 +259,7 @@
                             <div class="others_help_answer_block">
                                 <p class="others_help_answer_text">
                                     <span class="others_help_answer_icon">A.</span>
-                                    <span>ご投稿いただいた口コミは、掲載前に保育ひろば事務局にて確認を行っています。
+                                    <span>ご投稿いただいた口コミは、掲載前に保育士Reach事務局にて確認を行っています。
                                         そのため、掲載までにお時間をいただく場合がございます。何卒ご了承ください。
                                         
                                         なお、ガイドラインに反する口コミは掲載しておりません。ガイドラインに則った口コミ投稿をお願いいたします。</span>
@@ -277,7 +277,7 @@
                               <p class="others_help_answer_text">
                                   <span class="others_help_answer_icon">A.</span>
                                   <span>口コミ送信後の編集・削除は不可としております。
-                                    投稿者が保育ひろばを退会した場合も、口コミの削除は行っておりません。</span>
+                                    投稿者が保育士Reachを退会した場合も、口コミの削除は行っておりません。</span>
                               </p>
                           </div>
                       </li>     
@@ -312,7 +312,7 @@
                             <div class="others_help_answer_block">
                                 <p class="others_help_answer_text">
                                     <span class="others_help_answer_icon">A.</span>
-                                    <span>保育ひろばに掲載されている保育園情報（園名・所在地など）でもし誤った情報や古い情報が掲載される掲載されているなどのご指摘がある場合は、お問い合わせフォームにてご連絡ください。</span>
+                                    <span>保育士Reachに掲載されている保育園情報（園名・所在地など）でもし誤った情報や古い情報が掲載される掲載されているなどのご指摘がある場合は、お問い合わせフォームにてご連絡ください。</span>
                                 </p>
                             </div>
                         </li> 

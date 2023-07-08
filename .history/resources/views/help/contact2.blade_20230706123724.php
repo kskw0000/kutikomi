@@ -22,7 +22,7 @@
           <h1 class="register_title">お問い合わせ</h1>
           <div class="form_privacy_block">
             <p class="form_privacy_text" style="font-family: dnp-shuei-mgothic-std; color: #555555; font-size:15px; line-height: 1.8;">
-                保育ひろばへのお問い合わせは下記のフォームへご入力お願いします。<br>
+                保育士Reachへのお問い合わせは下記のフォームへご入力お願いします。<br>
                 お問い合わせの内容によっては返信できない場合もございますので、あらかじめご了承ください。<br>
                 貴社に関する掲載情報の削除依頼は<a href="/deletion" target="_blank" rel="noopener noreferrer">こちら</a>から連絡してください。
             </p>

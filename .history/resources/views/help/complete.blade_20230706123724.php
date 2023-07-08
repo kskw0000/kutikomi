@@ -20,7 +20,7 @@
                   お問い合わせ内容を<br class="common_sp_640">受け付けました
               </h1>
               <p class="register_complete_text">
-                  保育ひろばへのお問い合わせを受け付けました。<br>
+                  保育士Reachへのお問い合わせを受け付けました。<br>
                   内容をご確認後、担当者よりご連絡いたします。
               </p>
               <a href="/" class="common_btn01 center w320">トップに戻る</a>

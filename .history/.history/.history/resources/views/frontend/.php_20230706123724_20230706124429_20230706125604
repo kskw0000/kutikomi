@@ -10,7 +10,7 @@
                   </ul>
               </div>
               <div class="footer_head_flex">
-                  <img src="{{asset('assets/user/images/character/icon09.svg')}}" alt="保育ひろば" class="footer_icon">
+                  <img src="{{asset('assets/user/images/character/icon09.svg')}}" alt="保育士Reach" class="footer_icon">
                   <a href="/" class="footer_top_btn">
                       <img src="{{asset('assets/user/images/common/top_icon.png')}}" alt="ページトップ">
                   </a>
@@ -24,10 +24,10 @@
                           <img src="{{asset('/assets/user/images/footer/logo_yellow.svg')}}" alt="ページトップ">
                       </a>
                       <p class="footer_info_text">
-                          保育士による保育園の口コミ評判サイトなら【保育ひろば】。<br>保育ひろばは、「2023年06月10日時点で1120件」の保育士口コミ・評判を掲載しています。<br>
+                          保育士による保育園の口コミ評判サイトなら【保育士Reach】。<br>保育士Reachは、「2023年06月10日時点で1120件」の保育士口コミ・評判を掲載しています。<br>
                           「職員同士の人間関係」「管理職との人間関係」「保護者との人間関係」「給与・福利厚生」「保育方針」「業務量」「園庭・園舎」「シフトの融通」の8つの保育士口コミ・評判カテゴリーから保育園について知ることができます。<br>
                           多様な価値観をもった保育士による口コミ・評判を見ることで、よりあなたにピッタリな保育園を見つけましょう。<br>
-                          保育ひろばは”もっとオープンな園探し”をテーマに、保育士と保育園のミスマッチが解消されていく社会を本気で目指しています。
+                          保育士Reachは”もっとオープンな園探し”をテーマに、保育士と保育園のミスマッチが解消されていく社会を本気で目指しています。
                       </p>
                   </div>
                   <div class="footer_link_block">
@@ -60,7 +60,7 @@
                           
                           
                       </ul>
-                      <img src="{{asset('/assets/user/images/footer/character_icon.svg')}}" alt="保育ひろば" class="footer_icon">
+                      <img src="{{asset('/assets/user/images/footer/character_icon.svg')}}" alt="保育士Reach" class="footer_icon">
                   </div>
                   <div class="footer_others_block">
                       <p class="footer_others_title">関連サイト</p>

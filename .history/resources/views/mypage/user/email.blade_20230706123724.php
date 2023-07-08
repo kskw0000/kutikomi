@@ -40,7 +40,7 @@
                               <li class="form_check_item">
                                   <label class="form_check_label">
                                       <input type="checkbox" name="is_mail_notification" value="{{$result2[0]->checked}}"  {{$result2[0]->checked? 'checked' : ''}} >
-                                      <span>保育ひろばからのお知らせメール</span>
+                                      <span>保育士Reachからのお知らせメール</span>
                                   </label>
                               </li>
                               <li class="form_check_item">

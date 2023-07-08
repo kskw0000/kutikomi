@@ -143,7 +143,7 @@
             </button>
           </div>
           <div class="post_privacy_block">
-            <h3 class="post_privacy_title">保育ひろばは、<br class="common_sp_640">ユーザー様の個人情報を守ります</h3>
+            <h3 class="post_privacy_title">保育士Reachは、<br class="common_sp_640">ユーザー様の個人情報を守ります</h3>
             <p class="post_privacy_text">
               投稿者情報は、年代・性別等の一般的な属性部分のみを掲載します。個人情報を適切に管理し、裁判所または行政機関からの開示命令・要請がない限り、ユーザー様の同意なく第三者に開示することはありません。
             </p>
