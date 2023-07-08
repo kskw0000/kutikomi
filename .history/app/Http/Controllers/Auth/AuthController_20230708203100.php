@@ -211,7 +211,11 @@ class AuthController extends Controller
             'birth' => $birthdate,
             'prefecture_id' => $data['prefecture_id'],
             'city_id' => $data['city_id'],
+<<<<<<< HEAD
             'role_id' => 2,
+=======
+            'is_email_verified' => 1
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
         ]);
 
         foreach ($data['qualifications'] as $qualification) {
@@ -251,16 +255,23 @@ class AuthController extends Controller
   
         if(!is_null($verifyUser) ){
             $user = $verifyUser->user;
+<<<<<<< HEAD
             error_log($user);
             if(!$user->is_email_verified) {
                 $verifyUser->user->is_email_verified = 1;
                 $verifyUser->user->status = 1;
+=======
+              
+            if(!$user->is_email_verified) {
+                $verifyUser->user->is_email_verified = 1;
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                 $verifyUser->user->save();
                 $message = "Your e-mail is verified. You can now login.";
             } else {
                 $message = "Your e-mail is already verified. You can now login.";
             }
         }
+<<<<<<< HEAD
 
         if(Auth::check()){
 
@@ -268,6 +279,8 @@ class AuthController extends Controller
             if($user->role_id == 1) 
                 return redirect('/admin/home')->with('message', $message);
         }
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   
       return redirect()->route('login')->with('message', $message);
     }

@@ -93,13 +93,18 @@ class AnswerController extends Controller
     {
         $preinput = null;
         $schools = $this->searchnursery();
+<<<<<<< HEAD
         $me_id=-1;
         return view('answer', compact('schools', 'preinput','me_id'));
+=======
+        return view('answer', compact('schools', 'preinput'));
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     }
 
     public function searchnursery()
     {
         $data = DB::table('tbl_nursery')
+<<<<<<< HEAD
                 ->select('name', 'id')
                 ->get();
 
@@ -108,6 +113,16 @@ class AnswerController extends Controller
         // });
 
         return $data;
+=======
+                ->select('name')
+                ->get();
+
+        $arrayData = $data->map(function($item){
+            return $item->name;
+        });
+
+        return $arrayData;
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     }
 
     public function showschoolById($id) {
@@ -117,9 +132,15 @@ class AnswerController extends Controller
                   ->where('tbl_nursery.id', $id)
                   ->get();
         $preinput = $res[0];
+<<<<<<< HEAD
         $me_id=$id;
         $schools = $this->searchnursery();
         return view('answer', compact('schools','preinput','me_id'));
+=======
+
+        $schools = $this->searchnursery();
+        return view('answer', compact('schools','preinput'));
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     }
     
 }

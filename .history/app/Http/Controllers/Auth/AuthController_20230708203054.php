@@ -155,15 +155,23 @@ class AuthController extends Controller
     public function postConfirm(Request $request) {
         $data1 = session()->get('data1');
 
+<<<<<<< HEAD
         if($data1)  return view('auth.confirm', $data1);
         else return view('auth.login');
+=======
+        return view('auth.confirm', $data1);
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     }
     
     public function postComplete(Request $request) {
         $data2 = session()->get('data2');
+<<<<<<< HEAD
 
         if($data2) return view('auth.complete', compact('data2'));
         else return view('auth.login');
+=======
+        return view('auth.complete', compact('data2'));
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     }
     /**
      * Write code on Method
@@ -211,7 +219,11 @@ class AuthController extends Controller
             'birth' => $birthdate,
             'prefecture_id' => $data['prefecture_id'],
             'city_id' => $data['city_id'],
+<<<<<<< HEAD
             'role_id' => 2,
+=======
+            'is_email_verified' => 1
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
         ]);
 
         foreach ($data['qualifications'] as $qualification) {
@@ -251,16 +263,23 @@ class AuthController extends Controller
   
         if(!is_null($verifyUser) ){
             $user = $verifyUser->user;
+<<<<<<< HEAD
             error_log($user);
             if(!$user->is_email_verified) {
                 $verifyUser->user->is_email_verified = 1;
                 $verifyUser->user->status = 1;
+=======
+              
+            if(!$user->is_email_verified) {
+                $verifyUser->user->is_email_verified = 1;
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                 $verifyUser->user->save();
                 $message = "Your e-mail is verified. You can now login.";
             } else {
                 $message = "Your e-mail is already verified. You can now login.";
             }
         }
+<<<<<<< HEAD
 
         if(Auth::check()){
 
@@ -268,6 +287,8 @@ class AuthController extends Controller
             if($user->role_id == 1) 
                 return redirect('/admin/home')->with('message', $message);
         }
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
   
       return redirect()->route('login')->with('message', $message);
     }

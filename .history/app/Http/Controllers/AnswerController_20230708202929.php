@@ -117,9 +117,15 @@ class AnswerController extends Controller
                   ->where('tbl_nursery.id', $id)
                   ->get();
         $preinput = $res[0];
+<<<<<<< HEAD
         $me_id=$id;
         $schools = $this->searchnursery();
         return view('answer', compact('schools','preinput','me_id'));
+=======
+
+        $schools = $this->searchnursery();
+        return view('answer', compact('schools','preinput'));
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
     }
     
 }

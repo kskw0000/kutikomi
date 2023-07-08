@@ -229,7 +229,10 @@ class CompanyController extends Controller
       });
       $statistics = DB::table('tbl_review_relation')->join('tbl_review', 'tbl_review.review_id', '=', 'tbl_review_relation.id')
                                    ->groupBy('nursery_id')
+<<<<<<< HEAD
                                    ->where('tbl_review_relation.status', 1)
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
                                    ->select('tbl_review_relation.nursery_id', 'tbl_review.content', DB::raw('avg(tbl_review.rating) as review_rating'), DB::raw('count(*) as review_count'))
                                    ->get();
       $merged = $grouped->map(function ($item) use ($statistics) {

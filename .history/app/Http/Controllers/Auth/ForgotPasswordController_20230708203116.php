@@ -85,6 +85,7 @@ class ForgotPasswordController extends Controller
   
           return redirect('/login')->with('message', 'Your password has been changed!');
       }
+<<<<<<< HEAD
 
       public function showSendEmail(Request $request) 
       {
@@ -92,4 +93,6 @@ class ForgotPasswordController extends Controller
         print_r($data);
         return view('auth.sendforgetpasswordcomplete', compact('data'));
       }
+=======
+>>>>>>> d60301df9a95fe6864abc3f2155f80c944c15abc
 }
