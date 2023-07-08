@@ -812,7 +812,7 @@
       </button>
       <div class="align_center">
         <a href="/register?utm_source=popup&amp;utm_medium=banner&amp;utm_campaign=202303" target="_blank" rel="noopener noreferrer">
-          <img src="{{asset('assets/user/images/popup/event_popup_march2.png')}}" alt="event" style="width: 100%; position: relative; left: 50%; transform: translateX(-50%);">
+          <img src="{{asset('assets/user/images/popup/event_popup_march.png')}}" alt="event" style="width: 100%; position: relative; left: 50%; transform: translateX(-50%);">
         </a>
       </div>
     </div>
