@@ -30,8 +30,8 @@
                             <div class="form_birth_block">
                                 <select name="birthday_year" class="form_select FormSelect" id="birthdayYear">
                                     <option value="">年</option>
-                                    <option value="1973">1973</option>
-                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="1968">1968</option>
                                 </select>
                                 <p class="form_birth_text">年</p>
                                 <select name="birthday_month" class="form_select FormSelect" id="birthdayMonth">
@@ -183,8 +183,8 @@ $(document).ready(function() {
     $("#birthdayYear").append('<option value="">年</option>');
     $("#birthdayMonth").append('<option value="">月</option>');
     $("#birthdayDay").append('<option value="">日</option>');
-    for (i=2002;i>=1973;i--)
-    $("#birthdayYear").append('<option value="'+i+'" >'+i+'</option>');
+    for (i=2002;i<1973;i++)
+        $("#birthdayYear").append('<option value="'+i+'" >'+i+'</option>');
     for (i=1;i<=12;i++)
         $("#birthdayMonth").append('<option value="'+i+'" >'+i+'</option>');
     for (i=1;i<=31;i++)

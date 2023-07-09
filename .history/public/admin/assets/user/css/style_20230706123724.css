@@ -3817,17 +3817,14 @@
 
 .header_wrap {
   height: 60px;
+  left: 50%;
   padding: 0 13px 0 0;
   position: fixed;
-  top: -15px;
-  right: 0;
-  left: 0;
+  top: 30px;
+  transform: translateX(-50%);
   width: calc(100% - 60px);
-  z-index: 50;
-  box-sizing: border-box;
-  margin: auto;
+  z-index: 50
 }
-
 
 @media only screen and (max-width: 1200px) {
   .header_wrap {
